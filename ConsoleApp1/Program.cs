@@ -20,10 +20,12 @@ namespace ConsoleApp1
 
         static void SayHelloToUser()
         {
-            Console.WriteLine("Please enter your name:");
+            Console.WriteLine("Please enter your name and age:");
             string usersName;
             usersName = Console.ReadLine();
-            Console.WriteLine("Labdien," + usersName + "!");
+            string age;
+            age = Console.ReadLine();
+            Console.WriteLine("Labdien," + usersName + "!" + "Tavs vecums ir " + age);
             Console.ReadLine();
 
 
