@@ -10,6 +10,8 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
+            //paprasīt lietotajam, cik lielu skaitli viņs grib minēt
+            int maxNumber = int.Parse(Console.ReadLine());
             //izveidojam mainīgo kur glabāt skaitļu ģenerātoru instanci
             Random diceNumberGenerator;
             //ierakstam mainīhajam jaunizveidoto ģenerātoru
@@ -18,9 +20,8 @@ namespace ConsoleApp3
             //ierakstam rezultātu mainīgajā
             int diceValue = diceNumberGenerator.Next(1, 7);
             Console.WriteLine("Tavs kauliņa metiens " + diceValue);
-            int secondDiceValue = diceNumberGenerator.Next(0, 101);
-            Console.WriteLine("Tavs kauliņa metiens " + secondDiceValue);
             Console.ReadLine();
         }
+
     }
 }

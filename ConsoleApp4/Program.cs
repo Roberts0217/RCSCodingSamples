@@ -17,15 +17,22 @@ namespace ConsoleApp4
             diceNumberGenerator = new Random();
             //uzģenerēt gadījuma skaitli līdz šai robežai
             int guess = diceNumberGenerator.Next(1, maxNumber);
-            //cikls: kamēr lietotājs neuzmin:
-            string 
+            //cikls: kamēr lietotājs neuzmin: 
             while (true)
             {
-                if (maxNumber == diceNumberGenerator)
+                if (guess == maxNumber)
                 {
-                    break;
+                    Console.WriteLine("Jus atminejāt pareizo skaitli!");
+                    
                 }
-               
+                else if (guess > maxNumber) ;
+                {
+                    Console.WriteLine("Minat velreiz");
+                }
+                else if (guess < maxNumber) ;
+                {
+                    Console.WriteLine("Minat velreiz");
+                }
             }
 
             //paprasīt lietotājam lai viņš min kāds skaitlis ir izveidots (iegūt ievadi)
