@@ -20,19 +20,26 @@ namespace ConsoleApp4
             //cikls: kamēr lietotājs neuzmin: 
             while (true)
             {
-                if (guess == maxNumber)
+                Console.WriteLine("Uzminat skaitli!");
+                int lietotajaSkaitlis = int.Parse(Console.ReadLine());
                 {
-                    Console.WriteLine("Jus atminejāt pareizo skaitli!");
-                    
+                    if (guess == lietotajaSkaitlis)
+                        Console.WriteLine("Jūs uzvarējāt!");
+                    break;
                 }
-                else if (guess > maxNumber) ;
+                if (guess > lietotajaSkaitlis)
                 {
-                    Console.WriteLine("Minat velreiz");
+                    Console.WriteLine("Skaitlis par mazu, minat velreiz!");
                 }
-                else if (guess < maxNumber) ;
+                else
                 {
-                    Console.WriteLine("Minat velreiz");
+                    Console.WriteLine("Skaitlis par lielu, minat velreiz");
                 }
+                Console.ReadLine();
+               
+              
+
+               
             }
 
             //paprasīt lietotājam lai viņš min kāds skaitlis ir izveidots (iegūt ievadi)
