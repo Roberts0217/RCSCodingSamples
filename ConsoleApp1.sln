@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "ConsoleApp4\Hom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApp", "ToDoListApp\ToDoListApp.csproj", "{8A1571E3-1B32-4B5B-8053-4028D6D68AB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{25BD967C-150A-4700-86DF-B15C428C8D25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8A1571E3-1B32-4B5B-8053-4028D6D68AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A1571E3-1B32-4B5B-8053-4028D6D68AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A1571E3-1B32-4B5B-8053-4028D6D68AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25BD967C-150A-4700-86DF-B15C428C8D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BD967C-150A-4700-86DF-B15C428C8D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BD967C-150A-4700-86DF-B15C428C8D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BD967C-150A-4700-86DF-B15C428C8D25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

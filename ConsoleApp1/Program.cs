@@ -20,8 +20,11 @@ namespace ConsoleApp1
 
         static void SayHelloToUser()
         {
+            // console writeline - ja gribam textu uz ekrana
             Console.WriteLine("Please enter your name and age:");
+            //mainigais kur glabā datus  un ta ir vieta kur noglabā
             string usersName;
+            // paprasam konsolei ievadit tekstu, saglabājam rezultātu mainīgaja.
             usersName = Console.ReadLine();
             string age;
             age = Console.ReadLine();
