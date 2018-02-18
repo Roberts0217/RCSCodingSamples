@@ -10,18 +10,27 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-           
-            for (int tryCount = 1; tryCount <= 100; tryCount++)
+
+            for (int Skaitlis = 1; Skaitlis <= 1000000; Skaitlis++)
             {
-                if (tryCount % 15 == 0)
+                if (Skaitlis % 15 == 0)
+                {
                     Console.WriteLine("FizzBuzz");
-                else if (tryCount % 3 == 0)
+                }
+                else if (Skaitlis % 5 == 0)
+                {
                     Console.WriteLine("Fizz");
-                else if (tryCount % 5 == 0)
+                }
+                else if (Skaitlis % 3 == 0)
+                {
                     Console.WriteLine("Buzz");
+                }
                 else
-                    Console.WriteLine(tryCount);
-                Console.ReadLine();
+                {
+                    Console.WriteLine(Skaitlis);
+                }
+
+                
 
             }
 
