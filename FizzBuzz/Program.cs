@@ -10,8 +10,8 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-
-            for (int Skaitlis = 1; Skaitlis <= 1000000; Skaitlis++)
+            bool hasUserWon = false;
+            for (int Skaitlis = 1; Skaitlis <= 100 && !hasUserWon; Skaitlis++)
             {
                 if (Skaitlis % 15 == 0)
                 {
@@ -33,7 +33,7 @@ namespace FizzBuzz
                 
 
             }
-
+            Console.ReadLine();
         }
     }
 }

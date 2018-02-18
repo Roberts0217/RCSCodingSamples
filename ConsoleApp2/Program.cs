@@ -56,6 +56,7 @@ namespace ConsoleApp2
                 double dalāmais = GetNumberFromUser("Lūdzu ievadiet dalāmo");
                 double dalītājs = GetNumberFromUser("Lūdzu ievadiet dalītāju");
                 double modulo = dalāmais % dalītājs;
+            // ja moduls == 0 tad skaitļi jadalas
                 if (modulo == 0)
                 {
                     Console.WriteLine("Šie skaitļi dalas");

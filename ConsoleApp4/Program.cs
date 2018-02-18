@@ -16,25 +16,19 @@ namespace ConsoleApp4
             Random diceNumberGenerator;
             diceNumberGenerator = new Random();
             //uzģenerēt gadījuma skaitli līdz šai robežai
-            int guess = diceNumberGenerator.Next(1, maxNumber);
+            int guess = diceNumberGenerator.Next(1, maxNumber + 1);
             bool hasUserWon = false;
             //cikls: kamēr lietotājs neuzmin: 
-            for (int tryCount = 0; tryCount < 4 && !hasUserWon; tryCount = tryCount + 1)
+            for (int tryCount = 1; tryCount < 4 && !hasUserWon; tryCount = tryCount + 1)
             {
                 Console.WriteLine("Mēginajums #" + tryCount + " Uzminēt skaitli!");
                 int lietotajaSkaitlis = int.Parse(Console.ReadLine());
-                if (tryCount == 4)
-                {
-                    Console.WriteLine("Jūs esat zaudejis!");
-                    break;
-                }
 
-                if (guess == lietotajaSkaitlis)
+                if (lietotajaSkaitlis == guess)
                 {
                     Console.WriteLine("Jūs uzvarējāt!");
                     hasUserWon = true;
                 }
-
                 else if (guess > lietotajaSkaitlis)
                 {
                     Console.WriteLine("Skaitlis par mazu, minat velreiz!");
