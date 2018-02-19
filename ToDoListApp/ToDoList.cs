@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,11 +27,53 @@ namespace ToDoListApp
             //izgustam pirmo elementu no sraksta izmantojoy indeksatoru
             //skaititajs = skaititajs + 1; ir tas pats kas skaititajs += 1;
             // IR TAS PATS KAS SKAITITAJS++;
-            for(int skaititajs = 0; skaititajs < todoEntries.Count; skaititajs = skaititajs + 1)
+            for(int skaititajs = 0; skaititajs < todoEntries.Count; skaititajs++)
             {
-                Console.WriteLine("Your todo list enery is" + todoEntries[skaititajs]);
+                Console.WriteLine((skaititajs + 1) + ". " + todoEntries[skaititajs]);
             }
            
         }
+        public void deliteTodo(int indexOfTodo)
+        {
+            // neļaut mēgināt izvilkt ierakstu no saraksta,
+            //kura kārtas numurs neeksistē
+            if (indexOfTodo >= this.todoEntries.Count)
+            {
+                Console.WriteLine("Tāds ieraksts neeksistē");
+                return;
+            }
+            else
+            {
+                todoEntries.RemoveAt(indexOfTodo);
+            }
+            
+        }
+        public void DeldeliteTodo()
+        {
+            todoEntries.Clear();
+        }
+
+        public void SaveToFile()
+        {
+            //ctrl  +
+            for(int i = 0; i < todoEntries.Count; i++)
+            {
+                // control + .
+                // Append (angļu val) - Pievienot, papildināt
+                File.AppendAllText(
+                                @"C:\Users\Gatis\Documents\To do application saves\todos", todoEntries[i] + "\r\n");
+            }
+          
+        }
+        public void LoadFromeFile()
+        {
+            string[] allLinesFromFile = File.ReadAllLines(@"C:\Users\Gatis\Documents\To do application saves\todos.txt");
+                foreach (string listEntry in allLinesFromFile)
+            {
+                todoEntries.Add(listEntry);
+            }
+            
+        }
     }
+
 }

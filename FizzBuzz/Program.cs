@@ -11,7 +11,7 @@ namespace FizzBuzz
         static void Main(string[] args)
         {
             bool hasUserWon = false;
-            for (int Skaitlis = 1; Skaitlis <= 100 && !hasUserWon; Skaitlis++)
+            for (int Skaitlis = 1; Skaitlis <= 10000 && !hasUserWon; Skaitlis++)
             {
                 if (Skaitlis % 15 == 0)
                 {

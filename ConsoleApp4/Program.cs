@@ -20,7 +20,7 @@ namespace ConsoleApp4
             bool hasUserWon = false;
             //cikls: kamēr lietotājs neuzmin:
             int trycount = 0;
-            for (int tryCount = 1; tryCount <= 4 && !hasUserWon; tryCount = tryCount + 1)
+            for (int tryCount = 0; tryCount <= 4 && !hasUserWon; tryCount = tryCount + 1)
             {
                 Console.WriteLine("Mēginajums #" + tryCount + " Uzminēt skaitli!");
                 int lietotajaSkaitlis = int.Parse(Console.ReadLine());
